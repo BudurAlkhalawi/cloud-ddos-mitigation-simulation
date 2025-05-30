@@ -22,8 +22,7 @@ This project demonstrates a lightweight, application-layer mitigation technique 
 ├── attacker.py       # Python script that simulates DDoS attacks
 ├── stats.json        # Live counters for blocked vs. served requests
 ├── requirements.txt  # Dependencies required to run both scripts
-└──images/
-   └── Loopback: lo0.png  # Sample Wireshark traffic graph
+└── Loopbacklo0.png  # Sample Wireshark traffic graph
 ```
 
 ---
@@ -70,7 +69,7 @@ python attacker.py
 
 The mitigation logic effectively throttled incoming malicious traffic as shown in the Wireshark I/O Graph below:
 
-![DDoS Response Graph](Loopback: lo0.png)
+![DDoS Response Graph](Loopbacklo0.png)
 
 The spikes indicate blocked requests, while the flat line near zero represents rare legitimate responses.
 
